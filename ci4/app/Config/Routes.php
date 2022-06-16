@@ -36,10 +36,14 @@ $routes->get('/', 'Home::index');
 $routes->get('/about', 'Page::about');
 $routes->get('/contact', 'Page::contact');
 $routes->get('/faqs', 'Page::faqs');
+$routes->get('/artikel', 'Page::artikel');
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('/', 'Home::home');
+$routes->get('/home', 'Home::home');
+$routes->get('/artikel', 'Page::artikel');
 
 /*
  * --------------------------------------------------------------------
